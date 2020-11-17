@@ -10,9 +10,8 @@ import { Pelicula } from '../../models/peliculas'
 export class PeliculasComponent implements OnInit {
 
   public peliculas: Pelicula[];
-    
-
   public title: string;
+  public favorita: Pelicula;
 
   constructor() { 
     this.title = 'Peliculas';
@@ -25,6 +24,11 @@ export class PeliculasComponent implements OnInit {
 
   ngOnInit(): void {
     console.log(this.peliculas);
+  }
+
+  mostrarFavorita(event){
+    console.log(event);
+    this.favorita = event.pelicula;
   }
 
 }
