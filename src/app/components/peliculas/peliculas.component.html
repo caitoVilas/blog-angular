@@ -4,8 +4,8 @@
         <h2 class="subheader">{{ title }}</h2>
         <div id="favorita" *ngIf="favorita">
             <h2 class="subheader">Pelicula Favorita</h2>
-            <h4>{{ favorita.title }}</h4>
-            <h5>{{ favorita.year }}</h5>
+            <h4>{{ favorita.title | uppercase}}</h4>
+            <h5>{{ favorita.year | esPar}}</h5>
         </div>
         <!-- 
         <hr>
