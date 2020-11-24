@@ -19,7 +19,24 @@ export class ArticleService {
         return 'Soy el servicio de Articulos !!!';
     }
 
-    getArticles():Observable<any> {
-        return this._hhtp.get(this.url+'articles');
+    getArticles(last: any = null):Observable<any> {
+        
+        var articles = 'articles';
+
+        if(last !=null){
+             articles = 'articles/true';
+        }
+
+        return this._hhtp.get(this.url+articles);
+    }
+
+    getArticle(articleID): Observable<any> {
+
+        return this._hhtp.get(this.url+'article/'+articleID);
+    }
+
+    search(searchString): Observable<any>{
+
+        return this._hhtp.get(this.url+'search/'+searchString);
     }
 }

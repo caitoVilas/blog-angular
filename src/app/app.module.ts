@@ -20,6 +20,8 @@ import { PeliculaComponent } from './components/pelicula/pelicula.component';
 import { EsParPipe } from '../app/components/pipes/esPar.pipe';
 import { from } from 'rxjs';
 import { ArticlesComponent } from './components/articles/articles.component';
+import { ArticleComponent } from './components/article/article.component';
+import { SearchComponent } from './components/search/search.component';
 
 
 @NgModule({
@@ -37,7 +39,9 @@ import { ArticlesComponent } from './components/articles/articles.component';
     ErrorComponent,
     PeliculaComponent,
     EsParPipe,
-    ArticlesComponent
+    ArticlesComponent,
+    ArticleComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
