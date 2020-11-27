@@ -39,6 +39,7 @@ export class ArticleService {
 
         return this._hhtp.get(this.url+'search/'+searchString);
     }
+<<<<<<< HEAD
 
     create(article: Article): Observable<any>{
 
@@ -62,4 +63,6 @@ export class ArticleService {
 
         return this._hhtp.delete(this.url+'article/'+id, {headers: headers});
     }
+=======
+>>>>>>> eb23bbe677b67b86e0e7fa9f30a9101905ce219f
 }

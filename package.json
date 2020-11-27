@@ -19,7 +19,10 @@
     "@angular/platform-browser": "~9.1.11",
     "@angular/platform-browser-dynamic": "~9.1.11",
     "@angular/router": "~9.1.11",
+<<<<<<< HEAD
     "angular-file-uploader": "^7.0.3",
+=======
+>>>>>>> eb23bbe677b67b86e0e7fa9f30a9101905ce219f
     "angular2-moment": "^1.9.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",

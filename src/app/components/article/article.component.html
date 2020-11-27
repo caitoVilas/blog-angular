@@ -6,7 +6,11 @@
         <h2 class="subheader">{{ article.title }}</h2>
 
         <div id="articles">
+<<<<<<< HEAD
             <article class="article-item article-detail" *ngIf="article">
+=======
+            <article class="article-item article-detail">
+>>>>>>> eb23bbe677b67b86e0e7fa9f30a9101905ce219f
                 <div class="image-wrap">
                     <img src="{{ url + 'get-image/' + article.image}}"
                      alt="{{ article.title }}" *ngIf="article.image">
@@ -21,7 +25,11 @@
 
                 <div class="buttons">
 
+<<<<<<< HEAD
                     <a [routerLink]="['/blog/editar/', article._id]" class="btn btn-warning">Editar</a>
+=======
+                    <a href="" class="btn btn-warning">Editar</a>
+>>>>>>> eb23bbe677b67b86e0e7fa9f30a9101905ce219f
                     <a href="" class="btn btn-danger">Borrar</a>
                     
                 </div>

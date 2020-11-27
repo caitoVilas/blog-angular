@@ -22,9 +22,12 @@ import { from } from 'rxjs';
 import { ArticlesComponent } from './components/articles/articles.component';
 import { ArticleComponent } from './components/article/article.component';
 import { SearchComponent } from './components/search/search.component';
+<<<<<<< HEAD
 import { ArticleNewComponent } from './components/article-new/article-new.component';
 import { AngularFileUploaderModule } from 'angular-file-uploader';
 import { ArticleEditComponent } from './components/article-edit/article-edit.component';
+=======
+>>>>>>> eb23bbe677b67b86e0e7fa9f30a9101905ce219f
 
 
 @NgModule({
@@ -44,17 +47,25 @@ import { ArticleEditComponent } from './components/article-edit/article-edit.com
     EsParPipe,
     ArticlesComponent,
     ArticleComponent,
+<<<<<<< HEAD
     SearchComponent,
     ArticleNewComponent,
     ArticleEditComponent
+=======
+    SearchComponent
+>>>>>>> eb23bbe677b67b86e0e7fa9f30a9101905ce219f
   ],
   imports: [
     BrowserModule,
     routing,
     FormsModule,
     HttpClientModule,
+<<<<<<< HEAD
     MomentModule,
     AngularFileUploaderModule
+=======
+    MomentModule
+>>>>>>> eb23bbe677b67b86e0e7fa9f30a9101905ce219f
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]
