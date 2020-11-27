@@ -1,10 +1,15 @@
-<h2 class="subheader">{{ title }}</h2>
-<hr>
-<div *ngIf="nombre">
-<h3>El Nombre es : {{ nombre }}</h3>
+<app-slider [nombre]="'Pagina de Pruebas'" [size]="'small'"></app-slider>
+<div class="center">
+    <section id="content">
+        <h2 class="subheader">{{ title }}</h2>
+        <hr>
+        <div *ngIf="nombre">
+          <h3>El Nombre es : {{ nombre }}</h3>
+        </div>
+        <div *ngIf="!nombre">
+          <h3>No hay parametros por la url</h3>
+        </div>
+        <button (click)="redirection()">poneme nombre</button>
+    </section>
+    <app-sidebar></app-sidebar>
 </div>
-<div *ngIf="!nombre">
-    <h3>No hay parametros por la url</h3>
-</div>
-
-<button (click)="redirection()">poneme nombre</button>

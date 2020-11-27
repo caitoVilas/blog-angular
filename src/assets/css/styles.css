@@ -33,10 +33,13 @@ body{
    0% {
        transform: scale(1,1);
    }
-   50%{
-       transform: scale(1.02, 1.02);
+   25%{
+       transform: scale(1.05, 1.05);
    }
-   55%{
+   50%{
+       transform: scale(1,1);
+   }
+   75%{
        transform: scale(0.95, 0.95);
    }
    100% {
@@ -167,12 +170,33 @@ body{
     transition: 300ms;
     border: none;
     cursor: pointer;
+    text-align: center;
 }
 .btn-success{
     background-color: rgb(14, 194, 95);
 }
 .btn-success:hover{
     background-color: black;
+}
+
+.btn-warning{
+    background-color: rgb(231, 113, 16);
+    color: white !important;
+    text-decoration: none;
+}
+.btn-warning:hover,
+.btn-danger:hover{
+    text-decoration: none;
+    transition: all 300ms;
+    opacity: 0.8;
+}
+.buttons{
+    margin-top: 30px;
+}
+.btn-danger{
+    background-color: rgb(230, 17, 17);
+    color: white !important;
+    text-decoration: none;
 }
 .mid-form{
     width: 50%;
@@ -185,7 +209,9 @@ body{
     margin-top: 10px;
     font-size: 17px;
 }
-input[type="text"], textarea{
+input[type="text"],
+input[type="file"],
+ textarea{
     width: 100%;
     min-height: 30px;
     border: 1px solid #ccc;
@@ -195,6 +221,11 @@ input[type="text"], textarea{
 }
 input[type="text"]:focus, textarea:focus{
     box-shadow: 0px 0px 5px #666 inset;
+}
+.btn.up_btn.afu-attach-pin{
+    display: block !important;
+    width: 100% !important;
+    max-width: 90% !important;
 }
 textarea{
     width: 100%;
@@ -274,6 +305,9 @@ textarea{
     margin-top: 15px;
     margin-bottom: 0px;
     border: none;
+}
+.image-thumb img{
+    width: 150px;
 }
 /* RESPONSIVE */
 @media(max-width: 1488px){

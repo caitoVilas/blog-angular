@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { appRoutingProviders, routing } from './app-routing';
+import { FormsModule } from '@angular/forms'; 
+import { HttpClientModule } from '@angular/common/http';
+import { MomentModule } from 'angular2-moment';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -13,6 +16,16 @@ import { FormularioComponent } from './components/formulario/formulario.componen
 import { PaginaComponent } from './components/pagina/pagina.component';
 import { PeliculasComponent } from './components/peliculas/peliculas.component';
 import { ErrorComponent } from './components/error/error.component';
+import { PeliculaComponent } from './components/pelicula/pelicula.component';
+import { EsParPipe } from '../app/components/pipes/esPar.pipe';
+import { from } from 'rxjs';
+import { ArticlesComponent } from './components/articles/articles.component';
+import { ArticleComponent } from './components/article/article.component';
+import { SearchComponent } from './components/search/search.component';
+import { ArticleNewComponent } from './components/article-new/article-new.component';
+import { AngularFileUploaderModule } from 'angular-file-uploader';
+import { ArticleEditComponent } from './components/article-edit/article-edit.component';
+
 
 @NgModule({
   declarations: [
@@ -26,11 +39,22 @@ import { ErrorComponent } from './components/error/error.component';
     FormularioComponent,
     PaginaComponent,
     PeliculasComponent,
-    ErrorComponent
+    ErrorComponent,
+    PeliculaComponent,
+    EsParPipe,
+    ArticlesComponent,
+    ArticleComponent,
+    SearchComponent,
+    ArticleNewComponent,
+    ArticleEditComponent
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    FormsModule,
+    HttpClientModule,
+    MomentModule,
+    AngularFileUploaderModule
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]
